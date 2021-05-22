@@ -24,7 +24,7 @@ sudo dnf -y install autoconf
 sudo dnf -y install automake
 ## OK
 
-## INSTALL visudo
+## Setup Visudo
 echo 'marc ALL=(ALL:ALL) ALL' | sudo EDITOR='tee -a' visudo
 echo 'Defaults:marc timestamp_timeout=60' | sudo EDITOR='tee -a' visudo
 ## OK
@@ -47,7 +47,7 @@ sudo hostnamectl set-hostname fedora
 ### DISABLE SELINUX
 sudo sed -i 's/enforcing/disabled/' /etc/selinux/config
 
-### Download visual studio code
+### Download Visual Studio Code
 
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
