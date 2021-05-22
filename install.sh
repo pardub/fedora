@@ -7,7 +7,7 @@
 ### Set up Fedora
 
 sudo adduser marc
-mkdir -p git/git_clone
+sudo mkdir -p git/git_clone
 sudo hostnamectl set-hostname fedora
 sudo dnf update -y
 sudo dnf -y install timeshift
