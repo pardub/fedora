@@ -6,7 +6,7 @@
 
 ### Set up Fedora
 
-sudo useradd marc
+sudo adduser marc
 mkdir -p git/git_clone
 sudo hostnamectl set-hostname fedora
 sudo dnf update -y
