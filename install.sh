@@ -160,3 +160,46 @@ docker-compose --version
 
 ## TEST WITHOUT SUDO
 docker run hello-world
+
+
+##################### TO COMPLETE ################
+### INSTALL DOCKER
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh
+
+
+
+
+
+
+#### INSTALL JETBRAINS MONO FONTS IN ~/.local/share/fonts
+
+#### SET UP VS CODE TO USE NEW FONTS
+
+### TWEAKING SYSTEM FONTS
+#Make Ubuntu 20.04 Look Like MacOS [You Won't Believe the End Result]
+
+### FIREWALL SET UP OPEN/CLOSED PORTS
+
+### VS CODE INSTALL EXTENSIONS
+code --install-extension ginfuru.ginfuru-better-solarized-dark-theme
+code --install-extension ms-azuretools.vscode-docker	
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension redhat.vscode-yaml
+code --install-extension 
+code --install-extension 
+
+### DOWNLOAD .zshrc
+rm /home/marc/.zshrc
+curl -LJO https://raw.githubusercontent.com/pardub/fedora/main/.zshrc
+
+## zsh default shell
+sudo chsh -s $(which zsh) marc
+
+### DOWNLOAD POWERLINE10K
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+
+reboot
+
+
