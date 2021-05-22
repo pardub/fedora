@@ -20,6 +20,8 @@ sudo dnf -y install zsh
 sudo dnf -y install chromium
 sudo dnf -y groupinstall "Development Tools"
 sudo dnf -y install gnome-tweaks
+sudo dnf -y install autoconf 
+sudo dnf -y install automake
 ## OK
 
 ## INSTALL visudo
