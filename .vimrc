@@ -42,6 +42,12 @@ Plug 'vim-scripts/indentpython.vim'
 "Plug 'nvie/vim-flake8'
 call plug#end()
 
+""" color scheme
+syntax on
+colorscheme onedark
+filetype on
+filetype plugin indent on
+
 
 """ always show the status bar
 set laststatus=2
@@ -101,13 +107,6 @@ function ToggleMouse()
         let g:is_mouse_enabled = 1
     endif
 endfunction
-
-
-""" color scheme
-syntax on
-colorscheme onedark
-filetype on
-filetype plugin indent on
 
 """ code folding
 set foldmethod=indent
