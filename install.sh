@@ -56,5 +56,5 @@ sudo dnf -y  install code
 curl -LJO https://raw.githubusercontent.com/pardub/fedora/main/.vimrc
 
 ### Download vim plugin
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \\n    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+#curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
