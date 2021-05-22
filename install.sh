@@ -17,6 +17,6 @@ sudo dnf -y install git
 sudo dnf -y install gparted
 sudo dnf -y install util-linux-user
 sudo dnf -y install zsh
-sudo dnf -y install chromium
-sudo dnf -y install groupinstall "Development Tools"
-sudo dnf -y install gnome-tweak
+sudo dnf -y install Chromium
+sudo dnf -y groupinstall "Development Tools"
+sudo dnf -y install gnome-tweaks
