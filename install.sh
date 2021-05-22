@@ -102,3 +102,20 @@ gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profi
 
 ### If you want to see the current value for a setting you can use:
 # gsettings get org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:"$GNOME_TERMINAL_PROFILE"/ foreground-color
+
+
+### FIREFOX ADD ON
+#Firefox Multi-Account Containers
+#Ublock Origin
+#https://addons.mozilla.org/firefox/downloads/file/3768975/ublock_origin-1.35.2-an+fx.xpi
+#Keepa
+#OneNote Web Clipper
+#Decentraleyes 
+#Onetab
+#Wallabag
+#Gmail
+#Polar
+
+## Firewalld
+
+
