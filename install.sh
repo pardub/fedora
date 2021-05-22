@@ -8,7 +8,7 @@
 
 mkdir -p git/git_clone
 sudo dnf update -y
-sudo dnf install timeshift -y
+sudo dnf -y install timeshift
 sudo dnf install vim -y
 sudo dnf install visudo -y
 sudo dnf install git -y
