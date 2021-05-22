@@ -7,18 +7,18 @@
 ### Set up Fedora
 
 mkdir -p git/git_clone
+sudo hostnamectl set-hostname fedora
 sudo dnf update -y
 sudo dnf -y install timeshift
-sudo dnf install vim -y
-sudo dnf install visudo -y
-sudo dnf install git -y
-sudo dnf install gparted -y
-sudo hostnamectl set-hostname fedora -y
-sudo dnf install util-linux-user -y
-sudo dnf install zsh -y
-sudo dnf  install Chromium -y
-sudo dnf install groupinstall "Development Tools" -y
-sudo dnf install gnome-tweak -y
+sudo dnf -y install vim
+sudo dnf -y install visudo
+sudo dnf -y install git
+sudo dnf -y install gparted
+sudo dnf -y install util-linux-user
+sudo dnf -y install zsh
+sudo dnf -y install Chromium
+sudo dnf -y install groupinstall "Development Tools"
+sudo dnf -y install gnome-tweak
 
 ### set up minimize/maximize  window
 
@@ -40,8 +40,8 @@ gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize
 
 
 ### ADD EXTRA REPOS rpm fusion
-sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm -y
-sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
+sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 ### ADD GOOGLE DNS 
 echo "nameserver=8.8.8.8" >> /etc/hosts
@@ -62,8 +62,8 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \\n    https://raw.githubuserco
 
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
-sudo dnf check-update -y
-sudo dnf install code -y
+sudo dnf -y check-update
+sudo dnf -y  install code
 
 
 
