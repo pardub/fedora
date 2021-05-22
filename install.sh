@@ -62,28 +62,29 @@ curl -LJO https://raw.githubusercontent.com/pardub/fedora/main/.vimrc
 
 ### DOWNLOAD MESLO FONT
 ## TEST IF MESLO FONT IS AREALDY DOWNLOADED OR NOT
+sudo mkdir -p ~/.local/share/fonts/MesloGS/
 
-if [ ! -e "$HOME/.local/share/fonts/MesloLGS NF Regular.ttf" ]
+if [ ! -e "$HOME/.local/share/fonts/MesloGS/MesloLGS NF Regular.ttf" ]
 then
-    cd ~/.local/share/fonts || exit
+    cd  ~/.local/share/fonts/MesloGS | exit
     wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
 fi 
 ###
-if [ ! -e "$HOME/.local/share/fonts/MesloLGS NF Bold.ttf" ]
+if [ ! -e "$HOME/.local/share/fonts/MesloGS/MesloLGS NF Bold.ttf" ]
 then
-    cd ~/.local/share/fonts || exit
+    cd  ~/.local/share/fonts/MesloGS | exit
     wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
 fi
 ###
-if [ ! -e "$HOME/.local/share/fonts/MesloLGS NF Italic.ttf" ]
+if [ ! -e "$HOME/.local/share/fonts/MesloGS/MesloLGS NF Italic.ttf" ]
 then
-    cd ~/.local/share/fonts || exit
+    cd  ~/.local/share/fonts/MesloGS | exit
     wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
 fi
 ####
-if [ ! -e "$HOME/.local/share/fonts/MesloLGS NF Bold Italic.ttf" ]
+if [ ! -e "$HOME/.local/share/fonts/MesloGS/MesloLGS NF Bold Italic.ttf" ]
 then
-    cd ~/.local/share/fonts || exit
+    cd  ~/.local/share/fonts/MesloGS | exit
     wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
 fi
 
