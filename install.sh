@@ -37,7 +37,7 @@ sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-non
 ## OK
 
 ### ADD GOOGLE DNS 
-sudo echo "nameserver=8.8.8.8" >> /etc/hosts
+echo 'nameserver=8.8.8.8' | sudo tee -a /etc/hosts
 
 ### CHANGE HOSTNAME
 sudo hostnamectl set-hostname fedora
