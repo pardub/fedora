@@ -63,6 +63,7 @@ curl -LJO https://raw.githubusercontent.com/pardub/fedora/main/.vimrc
 ### DOWNLOAD MESLO FONT
 ## TEST IF MESLO FONT IS ALREADY DOWNLOADED OR NOT
 sudo mkdir -p $HOME/.local/share/fonts/MesloGS
+cd $HOME/.local/share/fonts/MesloGS
 
 if [ ! -e "$HOME/.local/share/fonts/MesloGS/MesloLGS NF Regular.ttf" ]
 then
