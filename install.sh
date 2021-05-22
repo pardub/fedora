@@ -21,6 +21,16 @@ sudo dnf -y install chromium
 sudo dnf -y groupinstall "Development Tools"
 sudo dnf -y install gnome-tweaks
 ## OK
+
 ## INSTALL visudo
 echo 'marc ALL=(ALL:ALL) ALL' | sudo EDITOR='tee -a' visudo
 echo 'Defaults:marc timestamp_timeout=60' | sudo EDITOR='tee -a' visudo
+## OK
+
+### set up minimize/maximize  window
+gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
+### activate shortcuts to minimize all windows
+
+### ADD EXTRA REPOS rpm fusion
+sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
