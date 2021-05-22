@@ -20,3 +20,7 @@ sudo dnf -y install zsh
 sudo dnf -y install chromium
 sudo dnf -y groupinstall "Development Tools"
 sudo dnf -y install gnome-tweaks
+## OK
+## INSTALL visudo
+echo 'marc ALL=(ALL:ALL) ALL' | sudo EDITOR='tee -a' visudo
+echo 'Defaults:marc timestamp_timeout=60' | sudo EDITOR='tee -a' visudo
