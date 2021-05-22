@@ -61,7 +61,7 @@ curl -LJO https://raw.githubusercontent.com/pardub/fedora/main/.vimrc
 #curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 ### DOWNLOAD MESLO FONT
-## TEST IF MESLO FONT IS AREALDY DOWNLOADED OR NOT
+## TEST IF MESLO FONT IS ALREADY DOWNLOADED OR NOT
 sudo mkdir -p ~/.local/share/fonts/MesloGS/
 
 if [ ! -e "$HOME/.local/share/fonts/MesloGS/MesloLGS NF Regular.ttf" ]
