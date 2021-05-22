@@ -86,7 +86,7 @@ echo 'Defaults:marc timestamp_timeout=60' | sudo EDITOR='tee -a' visudo
 ## Firewalld
 
 ## zsh default shell
-sudo chsh -s $(which zsh) "$USER"
+sudo chsh -s $(which zsh) marc
 
 ### DOWNLOAD .zshrc
 rm /home/marc/.zshrc
