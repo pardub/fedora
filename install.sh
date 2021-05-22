@@ -8,17 +8,17 @@
 
 mkdir -p git/git_clone
 sudo dnf update -y
-sudo dnf install timeshift
-sudo dnf install vim
-sudo dnf install visudo
-sudo dnf install git
-sudo dnf install gparted
-sudo hostnamectl set-hostname fedora
+sudo dnf install timeshift -y
+sudo dnf install vim -y
+sudo dnf install visudo -y
+sudo dnf install git -y
+sudo dnf install gparted -y
+sudo hostnamectl set-hostname fedora -y
 sudo dnf install util-linux-user -y
-sudo dnf install zsh
-sudo dnf  install Chromium
-sudo dnf install groupinstall "Development Tools"
-sudo dnf install gnome-tweak
+sudo dnf install zsh -y
+sudo dnf  install Chromium -y
+sudo dnf install groupinstall "Development Tools" -y
+sudo dnf install gnome-tweak -y
 
 ### set up minimize/maximize  window
 
