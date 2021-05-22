@@ -37,11 +37,11 @@ sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-non
 ## OK
 
 ### ADD GOOGLE DNS 
-echo "nameserver=8.8.8.8" >> /etc/hosts
+sudo echo "nameserver=8.8.8.8" >> /etc/hosts
 
 ### CHANGE HOSTNAME
-hostnamectl set-hostname fedora
+sudo hostnamectl set-hostname fedora
 
 ### DISABLE SELINUX
-sed -i 's/enforcing/disabled/' /etc/selinux/config
+sudo sed -i 's/enforcing/disabled/' /etc/selinux/config
 
