@@ -60,9 +60,8 @@ curl -LJO https://raw.githubusercontent.com/pardub/fedora/main/.vimrc
 ### Download vim plugin
 #curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-### DOWNLOAD MENLO FONTS
-
-### TEST IF FONT IS AREALDY DOWNLOADED OR NOT
+### DOWNLOAD MESLO FONT
+## TEST IF MESLO FONT IS AREALDY DOWNLOADED OR NOT
 
 if [ ! -e "$HOME/.local/share/fonts/MesloLGS NF Regular.ttf" ]
 then
@@ -89,6 +88,7 @@ then
 fi
 
 fc-cache -v
+
 ##### SET UP GNOME TERMINAL
 # https://ncona.com/2019/11/configuring-gnome-terminal-programmatically/
 # We will need this value later, so let’s save it in a variable:
@@ -102,8 +102,8 @@ gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profi
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:"$GNOME_TERMINAL_PROFILE"/ background-color '#000000'
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:"$GNOME_TERMINAL_PROFILE"/ foreground-color '#AFAFAF'
 
-# You can list all the properties that can be configured:
-gsettings list-keys org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:"$GNOME_TERMINAL_PROFILE"/
+### You can list all the properties that can be configured:
+# gsettings list-keys org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:"$GNOME_TERMINAL_PROFILE"/
 
-## If you want to see the current value for a setting you can use:
-gsettings get org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:"$GNOME_TERMINAL_PROFILE"/ foreground-color
+### If you want to see the current value for a setting you can use:
+# gsettings get org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:"$GNOME_TERMINAL_PROFILE"/ foreground-color
