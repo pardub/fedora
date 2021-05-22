@@ -2,7 +2,7 @@
 
 ### RUN THE SCRIPT AS SUDO
 
-#wget -O - https://raw.githubusercontent.com/pardub/fedora/main/install.sh | sudo bash
+# wget -O - https://raw.githubusercontent.com/pardub/fedora/main/install.sh | sudo bash -x
 
 ### Set up Fedora
 
