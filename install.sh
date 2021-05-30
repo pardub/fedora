@@ -23,6 +23,20 @@ sudo dnf -y install automake
 sudo dnf -y copr enable luminoso/vorta
 sudo dnf -y install vorta
 
+# Download Jami Voip client
+# First, we need to check whcih Fedora version is installed before downloading Jami
+
+. /etc/os-release
+if [ "$VERSION_ID" -eq "33"]
+then
+sudo -y dnf config-manager --add-repo https://dl.jami.net/nightly/fedora_33/jami-nightly.repo && sudo-y  dnf install jami
+if [ "$VERSION_ID" -eq "34"]
+then
+sudo -y dnf config-manager --add-repo https://dl.jami.net/nightly/fedora_34/jami-nightly.repo && sudo -y dnf install jami
+fi
+
+cd
+
 ## Setup Visudo
 echo 'marc ALL=(ALL:ALL) ALL' | sudo EDITOR='tee -a' visudo
 echo 'Defaults:marc timestamp_timeout=60' | sudo EDITOR='tee -a' visudo
