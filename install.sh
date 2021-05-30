@@ -19,6 +19,10 @@ sudo dnf -y install gnome-tweaks
 sudo dnf -y install autoconf 
 sudo dnf -y install automake
 
+# Download Vorta backup
+sudo dnf -y copr enable luminoso/vorta
+sudo dnf -y install vorta
+
 ## Setup Visudo
 echo 'marc ALL=(ALL:ALL) ALL' | sudo EDITOR='tee -a' visudo
 echo 'Defaults:marc timestamp_timeout=60' | sudo EDITOR='tee -a' visudo
