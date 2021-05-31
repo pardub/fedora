@@ -18,6 +18,9 @@ sudo dnf -y groupinstall "Development Tools"
 sudo dnf -y install gnome-tweaks
 sudo dnf -y install autoconf 
 sudo dnf -y install automake
+sudo dnf -y install ansible
+sudo dnf -y install borgbackup
+sudo dnf -y borgmatic
 
 # Download Vorta backup
 sudo dnf -y copr enable luminoso/vorta
