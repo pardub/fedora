@@ -23,7 +23,7 @@ sudo dnf -y install borgbackup
 sudo dnf -y borgmatic
 
 # SETUP BORGMATIC
-sudo generate-borgmatic-config
+# sudo generate-borgmatic-config
 
 # Download Vorta backup
 sudo dnf -y copr enable luminoso/vorta
@@ -33,6 +33,9 @@ sudo dnf -y install vorta
 # First, we need to check whcih Fedora version is installed before downloading Jami
 # Awk can be used also to retrieve the VERSION_ID
 # awk -F= '$1=="VERSION_ID" { print $2 ;}' /etc/os-release
+
+# Chrome extension
+ ## Bitwarten
 
 . /etc/os-release
 if [ "$VERSION_ID" -eq "33"]
