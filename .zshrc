@@ -37,10 +37,7 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export EDITOR="/usr/bin/vim" # define Vim as the editor by default
-
-
-
-
+export PATH="$PATH:/root/.local/bin"
 
 
 setopt appendhistory
