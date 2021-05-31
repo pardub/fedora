@@ -22,6 +22,9 @@ sudo dnf -y install ansible
 sudo dnf -y install borgbackup
 sudo dnf -y borgmatic
 
+# SETUP BORGMATIC
+sudo generate-borgmatic-config
+
 # Download Vorta backup
 sudo dnf -y copr enable luminoso/vorta
 sudo dnf -y install vorta
