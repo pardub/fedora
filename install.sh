@@ -20,7 +20,9 @@ sudo dnf -y install autoconf
 sudo dnf -y install automake
 sudo dnf -y install ansible
 sudo dnf -y install borgbackup
-sudo dnf -y borgmatic
+sudo dnf -y install borgmatic
+sudo dnf -y install clamav
+sudo dnf -y clamav-unofficial-sigs
 
 # SETUP BORGMATIC
 # sudo generate-borgmatic-config
