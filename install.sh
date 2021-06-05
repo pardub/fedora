@@ -23,6 +23,7 @@ sudo dnf -y install borgbackup
 sudo dnf -y install borgmatic
 sudo dnf -y install clamav
 sudo dnf -y clamav-unofficial-sigs
+### install opensnitch
 
 # SETUP BORGMATIC
 # sudo generate-borgmatic-config
