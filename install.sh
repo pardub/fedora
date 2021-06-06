@@ -8,7 +8,7 @@ sudo hostnamectl set-hostname fedora
 sudo dnf update -y
 sudo dnf -y install timeshift
 sudo dnf -y install vim
-#sudo dnf -y install visudo
+# sudo dnf -y install visudo
 sudo dnf -y install git
 sudo dnf -y install gparted
 sudo dnf -y install util-linux-user
@@ -21,8 +21,9 @@ sudo dnf -y install automake
 sudo dnf -y install ansible
 sudo dnf -y install borgbackup
 sudo dnf -y install borgmatic
-sudo dnf -y install clamav
-sudo dnf -y clamav-unofficial-sigs
+# sudo dnf -y install clamav
+# sudo dnf -y clamav-unofficial-sigs
+sudo dnf -y install redshift # Redshift adjusts the color temperature of the screen
 ### install opensnitch
 
 # SETUP BORGMATIC
@@ -137,18 +138,20 @@ gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profi
 
 
 ### FIREFOX ADD ON
-#Firefox Multi-Account Containers
-#Ublock Origin
-#https://addons.mozilla.org/firefox/downloads/file/3768975/ublock_origin-1.35.2-an+fx.xpi
-#Keepa
-#OneNote Web Clipper
-#Decentraleyes 
-#Onetab
-#Wallabag
-#Gmail
-#Polar
+# Firefox Multi-Account Containers
+# Ublock Origin
+# https://addons.mozilla.org/firefox/downloads/file/3768975/ublock_origin-1.35.2-an+fx.xpi
+# Keepa
+# OneNote Web Clipper
+# Decentraleyes 
+# Onetab
+# Wallabag
+# Gmail
+# Polar
+# Bitwarden 
 
-## Firewalld
+#### Firewalld Setup ####
+
 
 ################# DOCKER INSTALL ###################
 ## https://docs.docker.com/engine/install/fedora/#install-using-the-repository
@@ -200,16 +203,12 @@ curl -fsSL https://get.docker.com -o get-docker.sh
 sh get-docker.sh
 
 
-
-
-
-
 #### INSTALL JETBRAINS MONO FONTS IN ~/.local/share/fonts
 
 #### SET UP VS CODE TO USE NEW FONTS
 
 ### TWEAKING SYSTEM FONTS
-#Make Ubuntu 20.04 Look Like MacOS [You Won't Believe the End Result]
+# Make Ubuntu 20.04 Look Like MacOS [You Won't Believe the End Result]
 
 ### FIREWALL SET UP OPEN/CLOSED PORTS
 
