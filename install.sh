@@ -34,12 +34,9 @@ sudo dnf -y copr enable luminoso/vorta
 sudo dnf -y install vorta
 
 # Download Jami Voip client
-# First, we need to check whcih Fedora version is installed before downloading Jami
+# First, we need to check which Fedora version is installed before downloading Jami.
 # Awk can be used also to retrieve the VERSION_ID
 # awk -F= '$1=="VERSION_ID" { print $2 ;}' /etc/os-release
-
-# Chrome extension
- ## Bitwarten
 
 . /etc/os-release
 if [ "$VERSION_ID" -eq "33"]
