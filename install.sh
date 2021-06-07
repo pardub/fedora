@@ -9,7 +9,7 @@ sudo dnf update -y
 sudo dnf -y install timeshift
 sudo dnf -y install vim
 # sudo dnf -y install visudo
-sudo dnf -y install git
+sudo dnf -y install vim-default-editor
 sudo dnf -y install gparted
 sudo dnf -y install util-linux-user
 sudo dnf -y install zsh
