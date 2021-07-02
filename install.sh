@@ -5,7 +5,7 @@
 sudo adduser marc
 sudo mkdir -p git/git_clone
 sudo hostnamectl set-hostname fedora
-sudo dnf update -y
+sudo dnf -y update
 sudo dnf -y install timeshift
 sudo dnf -y install vim
 # sudo dnf -y install visudo
