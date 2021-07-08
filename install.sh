@@ -2,6 +2,10 @@
 ### RUN THE SCRIPT AS SUDO
 # wget -O - https://raw.githubusercontent.com/pardub/fedora/main/install.sh | sudo bash -x
 
+### ADD EXTRA REPOS rpm fusion
+sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
 sudo adduser marc
 sudo mkdir -p git/git_clone
 sudo hostnamectl set-hostname fedora
@@ -57,9 +61,6 @@ echo 'Defaults:marc timestamp_timeout=60' | sudo EDITOR='tee -a' visudo
 gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
 ### activate shortcuts to minimize all windows
 
-### ADD EXTRA REPOS rpm fusion
-sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 ###  ADD FLATPAK REPO
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
