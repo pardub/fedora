@@ -173,10 +173,10 @@ sudo dnf remove docker \
 ## SET UP THE REPOSITORY
 
 sudo dnf -y install dnf-plugins-core -y
-sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
+sudo dnf -y config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
 
 ## INSTALL DOCKER ENGINE
-sudo dnf install docker-ce docker-ce-cli containerd.io -y
+sudo dnf -y install docker-ce docker-ce-cli containerd.io
 sudo systemctl start docker
 sudo systemctl enable docker
 
