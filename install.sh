@@ -46,6 +46,7 @@ sudo dnf -y install vorta
 if [ "$VERSION_ID" -eq "33"]
 then
 sudo -y dnf config-manager --add-repo https://dl.jami.net/nightly/fedora_33/jami-nightly.repo && sudo-y  dnf install jami
+fi
 if [ "$VERSION_ID" -eq "34"]
 then
 sudo -y dnf config-manager --add-repo https://dl.jami.net/nightly/fedora_34/jami-nightly.repo && sudo -y dnf install jami
