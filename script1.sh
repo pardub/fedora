@@ -15,3 +15,5 @@ fi
 
 ## DOWNLOAD .zshrc
 curl -LJO https://raw.githubusercontent.com/pardub/fedora/main/.zshrc
+
+### REBOOT
