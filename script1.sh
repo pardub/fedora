@@ -1,5 +1,5 @@
 #!/bin/bash -xev
-sudo dnf -y install zsh
+
 sudo dnf -y update
 sudo dnf -y install zsh
 
