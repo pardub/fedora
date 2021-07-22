@@ -1,7 +1,7 @@
 #!/bin/bash -xev
 
 ## ADD USER
-sudo adduser marc
+#sudo adduser marc
 
 ## UPDATE AND ZSH INSTALL
 sudo dnf -y update
