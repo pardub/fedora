@@ -31,6 +31,7 @@ sudo dnf -y install redshift # Redshift adjusts the color temperature of the scr
 ### install opensnitch
 
 ### Download vim plugin
+cd
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 ## SETUP BORGMATIC
