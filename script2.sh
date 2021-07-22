@@ -141,6 +141,11 @@ sudo wget https://download.jetbrains.com/fonts/JetBrainsMono-2.225.zip
 sudo unzip /tmp/JetBrainsMono-2.225.zip -d ~/.local/share/fonts
 fc-cache -v
 
+### RECOMMENDED SETTINGS FOR THE FONT
+### Size: 13
+### Line spacing: 1.2
+
+
 #### SET UP VS CODE TO USE NEW FONTS
 
 ### TWEAKING SYSTEM FONTS
