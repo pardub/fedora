@@ -18,7 +18,7 @@ sudo dnf remove docker \
 
 ## SET UP THE REPOSITORY
 
-sudo dnf -y install dnf-plugins-core -y
+sudo dnf -y install dnf-plugins-core
 sudo dnf -y config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
 
 ## INSTALL DOCKER ENGINE
