@@ -30,6 +30,8 @@ sudo dnf -y install borgmatic
 sudo dnf -y install redshift # Redshift adjusts the color temperature of the screen
 ### install opensnitch
 
+### Download vim plugin
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 ## SETUP BORGMATIC
 # sudo generate-borgmatic-config
@@ -66,10 +68,8 @@ sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.m
 sudo dnf -y check-update
 sudo dnf -y  install code
 
-### Download vim plugin
-#curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
 ### DOWNLOAD MESLO FONT
+
 ## TEST IF MESLO FONT IS ALREADY DOWNLOADED OR NOT
 sudo mkdir -p $HOME/.local/share/fonts/MesloGS
 cd $HOME/.local/share/fonts/MesloGS
@@ -134,8 +134,12 @@ gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profi
 
 #### Firewalld Setup ####
 
-
 #### INSTALL JETBRAINS MONO FONTS IN ~/.local/share/fonts
+
+cd /tmp
+sudo wget https://download.jetbrains.com/fonts/JetBrainsMono-2.225.zip
+sudo unzip /tmp/JetBrainsMono-2.225.zip -d ~/.local/share/fonts
+fc-cache -v
 
 #### SET UP VS CODE TO USE NEW FONTS
 
@@ -152,6 +156,3 @@ code --install-extension redhat.vscode-yaml
 
 ### download .vimrc 
 curl -LJO https://raw.githubusercontent.com/pardub/fedora/main/.vimrc
-
-
-
