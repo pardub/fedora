@@ -3,6 +3,8 @@
 ## ADD USER
 #sudo adduser marc
 
+sudo dnf -y install util-linux-user
+
 ## UPDATE AND ZSH INSTALL
 sudo dnf -y update
 sudo dnf -y install zsh
