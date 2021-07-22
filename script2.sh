@@ -97,6 +97,7 @@ then
     cd  ~/.local/share/fonts/MesloGS | exit
     sudo wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
 fi
+###
 
 fc-cache -v
 
