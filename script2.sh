@@ -139,7 +139,8 @@ gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profi
 
 cd /tmp
 sudo wget https://download.jetbrains.com/fonts/JetBrainsMono-2.225.zip
-sudo unzip /tmp/JetBrainsMono-2.225.zip -d ~/.local/share/fonts
+##### sudo unzip /tmp/JetBrainsMono-2.225.zip -d ~/.local/share/fonts
+sudo unzip /tmp/JetBrainsMono-2.225.zip -d ~/.local/share/fonts/JetBrainsMono
 fc-cache -v
 
 ### RECOMMENDED SETTINGS FOR THE FONT
