@@ -53,7 +53,7 @@ echo 'nameserver=8.8.8.8' | sudo tee -a /etc/hosts
 ### CHANGE HOSTNAME
 sudo hostnamectl set-hostname fedora
 
-### DISABLE SELINUX
+### SETUP PERMISSIVE  SELINUX
 sudo sed -i 's/enforcing/permissive/' /etc/selinux/config
 
 ### set up minimize/maximize  window
