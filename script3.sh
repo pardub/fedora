@@ -1,10 +1,5 @@
 #!/bin/bash -xev
 
-
-
-
-
-
 ################# DOCKER INSTALL ###################
 ## https://docs.docker.com/engine/install/fedora/#install-using-the-repository
 
@@ -42,6 +37,4 @@ sudo chmod +x /usr/local/bin/docker-compose
 ### CHECK DOCKER COMPOSE VERSION
 docker-compose --version
 
-
 ### REBOOT
-#reboot
