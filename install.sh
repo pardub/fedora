@@ -1,6 +1,8 @@
-#!/bin/bash
+#!/bin/bash -xev
+
 ### RUN THE SCRIPT AS SUDO
 # wget -O - https://raw.githubusercontent.com/pardub/fedora/main/install.sh | sudo bash -x
+sudo dnf -y update
 
 ### ADD EXTRA REPOS rpm fusion
 sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
@@ -9,7 +11,7 @@ sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-non
 sudo adduser marc
 sudo mkdir -p git/git_clone
 sudo hostnamectl set-hostname fedora
-sudo dnf -y update
+
 sudo dnf -y install timeshift
 sudo dnf -y install vim
 # sudo dnf -y install visudo
