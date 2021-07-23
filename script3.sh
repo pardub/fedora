@@ -27,7 +27,7 @@ sudo systemctl start docker
 sudo systemctl enable docker
 
 ## Manage Docker as a non-root user
-sudo groupadd docker
+### sudo groupadd docker
 sudo usermod -aG docker "$USER"
 sudo chmod 666 /var/run/docker.sock
 
