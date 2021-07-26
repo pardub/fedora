@@ -1,0 +1,18 @@
+sudo firewall-cmd --permanent --new-zone=laptop-home
+#sudo firewall-cmd --zone=laptop-home --permanent --add-service=dhcpv6-client
+sudo firewall-cmd --zone=laptop-home --permanent --add-service=ssh
+sudo firewall-cmd --zone=laptop-home --permanent --add-rich-rule='rule service name=ssh accept limit value=10/m'
+sudo firewall-cmd --zone=laptop-home --permanent --add-rich-rule='rule service name=http accept limit value=10/s'
+sudo firewall-cmd --zone=laptop-home --permanent --add-rich-rule='rule service name=https accept limit value=10/s'
+sudo firewall-cmd --zone=laptop-home --permanent --add-rich-rule='rule service name=cockpit accept limit value=10/m'
+sudo firewall-cmd --zone=laptop-home --permanent --set-target=DROP
+sudo firewall-cmd --reload
+sudo firewall-cmd --zone=laptop-home --list-all
+sudo firewall-cmd --get-active-zones
+sudo firewall-cmd --zone=laptop-home --change-interface=wlp1s0
+sudo firewall-cmd --get-active-zones
+sudo systemctl restart network
+sudo firewall-cmd --get-active-zones
+sudo firewall-cmd --get-zone-of-interface=wlp1s0
+sudo firewall-cmd --set-default-zone=laptop-home
+sudo systemctl restart firewalld
