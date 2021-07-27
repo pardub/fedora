@@ -38,6 +38,7 @@ sudo dnf -y install youtube-dl
 sudo dnf -y install audacity
 sudo dnf -y install git
 sudo dnf -y install calcurse
+sudo dnf -y install @virtualization
 # sudo dnf -y install clamav
 # sudo dnf -y clamav-unofficial-sigs
 sudo dnf -y install redshift # Redshift adjusts the color temperature of the screen
