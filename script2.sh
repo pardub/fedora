@@ -25,6 +25,19 @@ sudo dnf -y install automake
 sudo dnf -y install ansible
 sudo dnf -y install borgbackup
 sudo dnf -y install borgmatic
+sudo dnf -y install okular
+sudo dnf -y install tldr
+sudo dnf -y install weechat
+sudo dnf -y install mumble
+sudo dnf -y install filezilla
+sudo dnf -y install wireguard-tools
+sudo dnf -y install bat
+sudo dnf -y install exa
+sudo dnf -y install fzf
+sudo dnf -y install youtube-dl
+sudo dnf -y install audacity
+sudo dnf -y install git
+sudo dnf -y install calcurse
 # sudo dnf -y install clamav
 # sudo dnf -y clamav-unofficial-sigs
 sudo dnf -y install redshift # Redshift adjusts the color temperature of the screen
