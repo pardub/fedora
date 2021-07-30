@@ -42,6 +42,7 @@ sudo dnf -y install rclone
 sudo dnf -y install rclone-browser
 sudo dnf -y install audacity 3.0.2
 sudo dnf -y install dropbox
+sudo dnf -y chrome-remote-desktop
 
 sudo dnf -y install @virtualization
 # sudo dnf -y install clamav
