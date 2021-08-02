@@ -44,6 +44,8 @@ sudo dnf -y install audacity 3.0.2
 sudo dnf -y install dropbox
 sudo dnf -y install chrome-remote-desktop
 sudo dnf -y install fuse
+sudo dnf -y install rclone
+sudo dnf -y install rclone-browser
 
 ### WINDSCRIBE
 sudo wget https://repo.windscribe.com/fedora/windscribe.repo -O /etc/yum.repos.d/windscribe.repo
