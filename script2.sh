@@ -45,6 +45,11 @@ sudo dnf -y install dropbox
 sudo dnf -y install chrome-remote-desktop
 sudo dnf -y install fuse
 
+### WINDSCRIBE
+sudo wget https://repo.windscribe.com/fedora/windscribe.repo -O /etc/yum.repos.d/windscribe.repo
+sudo dnf update -y
+sudo dnf install windscribe-cli.x86_64 -y
+
 sudo dnf -y install @virtualization
 # sudo dnf -y install clamav
 # sudo dnf -y clamav-unofficial-sigs
