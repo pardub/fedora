@@ -10,8 +10,6 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 sudo mkdir -p git/git_clone
 
 ## INSTALL SOFTWARES
-sudo dnf -y groupupdate Multimedia
-sudo dnf -y install x264
 sudo dnf -y install timeshift
 sudo dnf -y install vim
 # sudo dnf -y install visudo
@@ -48,6 +46,13 @@ sudo dnf -y install chrome-remote-desktop
 sudo dnf -y install fuse
 sudo dnf -y install rclone
 sudo dnf -y install rclone-browser
+
+### CODECS
+sudo dnf -y install x264
+sudo dnf -y groupupdate Multimedia
+sudo dnf -y install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
+sudo dnf -y install lame\* --exclude=lame-devel
+sudo dnf -y group upgrade --with-optional Multimedia
 
 ### WINDSCRIBE
 sudo wget https://repo.windscribe.com/fedora/windscribe.repo -O /etc/yum.repos.d/windscribe.repo
