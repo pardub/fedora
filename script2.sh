@@ -11,6 +11,7 @@ sudo mkdir -p git/git_clone
 
 ## INSTALL SOFTWARES
 sudo dnf -y groupupdate Multimedia
+sudo dnf -y install x264
 sudo dnf -y install timeshift
 sudo dnf -y install vim
 # sudo dnf -y install visudo
