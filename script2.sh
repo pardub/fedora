@@ -55,6 +55,7 @@ sudo dnf -y install lame\* --exclude=lame-devel
 sudo dnf -y group upgrade --with-optional Multimedia
 
 ### WINDSCRIBE
+echo 'exclude=windscribe-cli' | sudo tee -a /etc/dnf/dnf.conf ### prevent windscribe update to version 1.4 that is currently not working
 sudo wget https://repo.windscribe.com/fedora/windscribe.repo -O /etc/yum.repos.d/windscribe.repo
 sudo dnf update -y
 sudo dnf install windscribe-cli-1.3
