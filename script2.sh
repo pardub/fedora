@@ -46,6 +46,7 @@ sudo dnf -y install chrome-remote-desktop
 sudo dnf -y install fuse
 sudo dnf -y install rclone
 sudo dnf -y install rclone-browser
+sudo dnf -y install power-profiles-daemon
 
 ### CODECS
 sudo dnf -y install x264
