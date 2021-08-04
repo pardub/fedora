@@ -48,6 +48,9 @@ sudo dnf -y install rclone
 sudo dnf -y install rclone-browser
 sudo dnf -y install power-profiles-daemon
 
+### FIREFOX HARDWARE ACCELERATION
+# https://wiki.archlinux.org/title/Firefox#Hardware_video_acceleration
+
 ### CODECS
 sudo dnf -y install x264
 sudo dnf -y groupupdate Multimedia
