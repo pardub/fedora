@@ -47,6 +47,7 @@ sudo dnf -y install fuse
 sudo dnf -y install rclone
 sudo dnf -y install rclone-browser
 sudo dnf -y install power-profiles-daemon
+sudo dnf -y install pdfarranger
 
 ### FIREFOX HARDWARE ACCELERATION
 # https://wiki.archlinux.org/title/Firefox#Hardware_video_acceleration
