@@ -49,6 +49,7 @@ sudo dnf -y install rclone-browser
 sudo dnf -y install power-profiles-daemon
 sudo dnf -y install pdfarranger
 sudo dnf -y install bookworm
+sudo dnf -y install anki
 
 ### FIREFOX HARDWARE ACCELERATION
 # https://wiki.archlinux.org/title/Firefox#Hardware_video_acceleration
