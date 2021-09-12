@@ -4,6 +4,10 @@
 sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
+### Fastest mirror and Delta RPM
+echo 'fastestmirror=true' | sudo tee -a /etc/dnf/dnf.conf
+echo 'deltarpm=true'      | sudo tee -a /etc/dnf/dnf.conf
+
 ###  ADD FLATPAK REPO
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
