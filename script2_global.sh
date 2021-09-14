@@ -72,7 +72,13 @@ sudo wget https://repo.windscribe.com/fedora/windscribe.repo -O /etc/yum.repos.d
 sudo dnf update -y
 sudo dnf install windscribe-cli-1.3
 
+### VIRTUALIZATION
 sudo dnf -y install @virtualization
+sudo systemctl start libvirtd
+sudo systemctl enable libvirtd
+## To verify that the KVM kernel modules are properly loaded, enter:
+# lsmod | grep kvm
+
 # sudo dnf -y install clamav
 # sudo dnf -y clamav-unofficial-sigs
 sudo dnf -y install redshift # Redshift adjusts the color temperature of the screen
