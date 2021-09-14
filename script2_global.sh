@@ -79,6 +79,11 @@ sudo systemctl enable libvirtd
 ## To verify that the KVM kernel modules are properly loaded, enter:
 # lsmod | grep kvm
 
+## VIRTIO WIN DRIVERS
+wget https://fedorapeople.org/groups/virt/virtio-win/virtio-win.repo \
+  -O /etc/yum.repos.d/virtio-win.repo
+
+
 # sudo dnf -y install clamav
 # sudo dnf -y clamav-unofficial-sigs
 sudo dnf -y install redshift # Redshift adjusts the color temperature of the screen
