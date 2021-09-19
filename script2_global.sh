@@ -59,6 +59,10 @@ sudo dnf -y install pdfarranger
 sudo dnf -y install bookworm
 sudo dnf -y install anki
 
+### SERVICES ACTIVATION
+sudo systemctl start cockpit
+sudo firewall-cmd --add-service=cockpit --permanent
+
 ### FIREFOX HARDWARE ACCELERATION
 # https://wiki.archlinux.org/title/Firefox#Hardware_video_acceleration
 
