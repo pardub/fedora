@@ -16,7 +16,7 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 sudo mkdir -p git/git_clone
 
 ## INSTALL SOFTWARES
-sudo dnf -y install cockpit ###web console for Linux servers
+sudo dnf -y install cockpit ### web console for Linux servers
 sudo dnf -y install timeshift
 sudo dnf -y install vim
 # sudo dnf -y install visudo
