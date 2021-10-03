@@ -58,6 +58,8 @@ sudo dnf -y install power-profiles-daemon
 sudo dnf -y install pdfarranger
 sudo dnf -y install bookworm
 sudo dnf -y install anki
+sudo dnf -y install tor
+sudo dnf -y install torbrowser-launcher
 
 ### SERVICES ACTIVATION
 sudo systemctl start cockpit
