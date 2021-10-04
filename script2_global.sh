@@ -24,7 +24,7 @@ sudo dnf -y install --allowerasing vim-default-editor
 sudo dnf -y install gparted
 sudo dnf -y install util-linux-user
 sudo dnf -y install zsh
-sudo dnf -y install chromium
+sudo dnf -y install chromium-browser-privacy
 sudo dnf -y groupinstall "Development Tools"
 sudo dnf -y install gnome-tweaks
 sudo dnf -y install gnome-extensions-app
