@@ -60,6 +60,7 @@ sudo dnf -y install bookworm
 sudo dnf -y install anki
 sudo dnf -y install tor
 sudo dnf -y install torbrowser-launcher
+sudo dnf -y install gtkhash
 
 ### SERVICES ACTIVATION
 sudo systemctl start cockpit
