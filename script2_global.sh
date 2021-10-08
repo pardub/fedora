@@ -10,6 +10,10 @@ echo 'deltarpm=True'                  | sudo tee -a /etc/dnf/dnf.conf
 echo 'max_parallel_downloads=10'      | sudo tee -a /etc/dnf/dnf.conf
 sudo dnf clean all
 
+### DISABLING SSH
+sudo systemctl stop sshd
+sudo systemctl disable sshd
+
 ###  ADD FLATPAK REPO
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
