@@ -68,6 +68,7 @@ sudo dnf -y install lynis ### audit
 mkdir ~/git
 cd ~/git
 wget https://github.com/evilsocket/opensnitch/releases/download/v1.4.1/opensnitch-ui-1.4.1-1.noarch.f29.rpm
+wget https://github.com/evilsocket/opensnitch/releases/download/v1.4.0/opensnitch-1.4.0-1.x86_64.rpm
 sudo dnf -y localinstall opensnitch-1*.rpm; sudo dnf -y localinstall opensnitch-ui*.rpm
 cd
 
