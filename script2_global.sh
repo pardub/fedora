@@ -43,7 +43,6 @@ sudo dnf -y install bat
 sudo dnf -y install exa
 sudo dnf -y install fzf
 sudo dnf -y install youtube-dl
-sudo dnf -y install audacity
 sudo dnf -y install git
 sudo dnf -y install calcurse
 sudo dnf -y install rclone
