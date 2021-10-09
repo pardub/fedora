@@ -138,6 +138,8 @@ alias cpuinfo="lscpu"
 ## get GPU ram on desktop / laptop##
 alias gpumeminfo="grep -i --color memory /var/log/Xorg.0.log"
 
+## Size folder
+alias size="du -sh"
 
 #-------------------------------------------------------------
 # Git Alias Commands
