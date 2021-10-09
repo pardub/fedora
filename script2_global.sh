@@ -71,6 +71,8 @@ wget https://github.com/evilsocket/opensnitch/releases/download/v1.4.1/opensnitc
 wget https://github.com/evilsocket/opensnitch/releases/download/v1.4.0/opensnitch-1.4.0-1.x86_64.rpm
 sudo dnf -y localinstall opensnitch-1*.rpm; sudo dnf -y localinstall opensnitch-ui*.rpm
 cd
+sudo sytemctl start opensnitchd
+## sudo sytemctl enable opensnitchd
 
 ### SERVICES ACTIVATION
 sudo systemctl start cockpit
