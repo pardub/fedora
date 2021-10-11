@@ -64,6 +64,7 @@ sudo dnf -y install anki
 sudo dnf -y install tor
 sudo dnf -y install torbrowser-launcher
 sudo dnf -y install gtkhash
+sudo dnf -y install ffmpeg
 sudo dnf -y install lynis ### audit
 mkdir ~/git
 cd ~/git
