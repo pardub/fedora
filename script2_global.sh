@@ -76,6 +76,9 @@ cd
 sudo sytemctl start opensnitchd
 ## sudo sytemctl enable opensnitchd
 
+### UNINSTALL
+sudo dnf -y remove totem
+
 ### SERVICES ACTIVATION
 sudo systemctl start cockpit
 sudo firewall-cmd --add-service=cockpit --permanent
