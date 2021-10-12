@@ -1,3 +1,5 @@
+### credit goes to https://github.com/taw00/howto/blob/master/howto-configure-firewalld.md
+
 sudo firewall-cmd --permanent --new-zone=laptop-home
 #sudo firewall-cmd --zone=laptop-home --permanent --add-service=dhcpv6-client
 sudo firewall-cmd --zone=laptop-home --permanent --add-service=ssh
