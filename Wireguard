@@ -1,0 +1,16 @@
+###Source:https://www.ivpn.net/knowledgebase/linux/linux-autostart-wireguard-in-systemd/
+
+#Generate a valid and working WireGuard configuration file /etc/wireguard/Frankfurt.conf
+sudo systemctl enable wg-quick@Frankfurt.service
+sudo systemctl daemon-reload
+sudo systemctl start wg-quick@Frankfurt
+sudo reboot
+systemctl status wg-quick@Frankfurt
+
+
+### To remove the service and clean up the system:
+#sudo systemctl stop wg-quick@Frankfurt
+#sudo systemctl disable wg-quick@Frankfurt.service
+#sudo rm -i /etc/systemd/system/wg-quick@Frankfurt*
+#sudo systemctl daemon-reload
+#sudo systemctl reset-failed
