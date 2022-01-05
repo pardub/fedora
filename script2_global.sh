@@ -253,3 +253,7 @@ code --install-extension redhat.vscode-yaml
 
 ### download .vimrc 
 curl -LJO https://raw.githubusercontent.com/pardub/fedora/main/.vimrc
+
+### Add Gnome extensions
+## https://github.com/JoseExposito/touche ## configure your touchpad and touchscreen multi-touch gestures
+
