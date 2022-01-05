@@ -69,6 +69,7 @@ sudo dnf -y install ffmpeg
 sudo dnf -y install lynis ### audit
 sudo dnf -y install mpv ### For streaming with clone
 sudo dnf -y dconf-editor  ### save workspaces after reboot
+sudo dnf -y macchanger  ### change MAC addres
 mkdir ~/git
 cd ~/git
 wget https://github.com/evilsocket/opensnitch/releases/download/v1.4.1/opensnitch-ui-1.4.1-1.noarch.f29.rpm
