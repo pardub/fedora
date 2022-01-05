@@ -41,7 +41,7 @@ sudo dnf -y install borgmatic
 sudo dnf -y install okular
 sudo dnf -y install tldr
 sudo dnf -y install weechat
-sudo dnf -y install mumble
+### sudo dnf -y install mumble VOIP SOFTWARE
 sudo dnf -y install filezilla
 sudo dnf -y install wireguard-tools
 sudo dnf -y install bat
