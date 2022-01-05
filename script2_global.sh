@@ -65,6 +65,7 @@ sudo dnf -y install anki
 sudo dnf -y install tor
 sudo dnf -y install torbrowser-launcher
 sudo dnf -y install gtkhash
+sudo dnf -y install kleopatra
 sudo dnf -y install ffmpeg
 sudo dnf -y install lynis ### audit
 sudo dnf -y install mpv ### For streaming with clone
@@ -258,5 +259,6 @@ curl -LJO https://raw.githubusercontent.com/pardub/fedora/main/.vimrc
 ### Add Gnome extensions
 ## https://github.com/JoseExposito/touche ## configure your touchpad and touchscreen multi-touch gestures
 ## Auto Activities
-##
+
+
 
