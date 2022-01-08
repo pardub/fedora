@@ -67,6 +67,7 @@ sudo dnf -y install torbrowser-launcher
 sudo dnf -y install gtkhash
 sudo dnf -y install kleopatra
 sudo dnf -y install ffmpeg
+sudo dnf -y install gpgme
 sudo dnf -y install lynis ### audit
 sudo dnf -y install mpv ### For streaming with clone
 sudo dnf -y dconf-editor  ### save workspaces after reboot
