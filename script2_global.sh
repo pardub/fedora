@@ -261,5 +261,9 @@ curl -LJO https://raw.githubusercontent.com/pardub/fedora/main/.vimrc
 ## https://github.com/JoseExposito/touche ## configure your touchpad and touchscreen multi-touch gestures
 ## Auto Activities
 
+### WIREGUARD CONFIG
+echo '[keyfile]\nunmanaged-devices=type:wireguard' /etc/NetworkManager/conf.d/unmanaged.conf
+#https://wiki.archlinux.org/title/WireGuard#Routes_are_periodically_reset
+# This allows the Wireguard connection to be up and running automatically after reboot when it has been set up with nmcli.
 
 
