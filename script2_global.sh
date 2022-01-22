@@ -68,6 +68,7 @@ sudo dnf -y install gtkhash
 sudo dnf -y install kleopatra
 sudo dnf -y install ffmpeg
 sudo dnf -y install gpgme
+sudo dnf -y install claws-mail 
 sudo dnf -y install lynis ### audit
 sudo dnf -y install mpv ### For streaming with clone
 sudo dnf -y dconf-editor  ### save workspaces after reboot
@@ -266,4 +267,6 @@ echo '[keyfile]\nunmanaged-devices=type:wireguard' /etc/NetworkManager/conf.d/un
 #https://wiki.archlinux.org/title/WireGuard#Routes_are_periodically_reset
 # This allows the Wireguard connection to be up and running automatically after reboot when it has been set up with nmcli.
 
+### Claws mail config timezone
+sed -i 's/hide_timezone=0/hide_timezone=1/' ~/.claws-mail/clawsrc
 
