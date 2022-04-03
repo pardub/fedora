@@ -114,7 +114,7 @@ sudo systemctl enable libvirtd
 # lsmod | grep kvm
 
 ## VIRTIO WIN DRIVERS
-wget https://fedorapeople.org/groups/virt/virtio-win/virtio-win.repo \
+sudo wget https://fedorapeople.org/groups/virt/virtio-win/virtio-win.repo \
   -O /etc/yum.repos.d/virtio-win.repo
 
 
