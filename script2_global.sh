@@ -73,13 +73,13 @@ sudo dnf -y install lynis ### audit
 sudo dnf -y install mpv ### For streaming with clone
 sudo dnf -y install dconf-editor  ### save workspaces after reboot
 sudo dnf -y install macchanger  ### change MAC addres
-mkdir ~/git
-cd ~/git
-wget https://github.com/evilsocket/opensnitch/releases/download/v1.4.1/opensnitch-ui-1.4.1-1.noarch.f29.rpm
-wget https://github.com/evilsocket/opensnitch/releases/download/v1.4.0/opensnitch-1.4.0-1.x86_64.rpm
-sudo dnf -y localinstall opensnitch-1*.rpm; sudo dnf -y localinstall opensnitch-ui*.rpm
-cd
-sudo sytemctl start opensnitchd
+### mkdir ~/git
+### cd ~/git
+### wget https://github.com/evilsocket/opensnitch/releases/download/v1.4.1/opensnitch-ui-1.4.1-1.noarch.f29.rpm
+### wget https://github.com/evilsocket/opensnitch/releases/download/v1.4.0/opensnitch-1.4.0-1.x86_64.rpm
+### sudo dnf -y localinstall opensnitch-1*.rpm; sudo dnf -y localinstall opensnitch-ui*.rpm
+### cd
+### sudo sytemctl start opensnitchd
 ## sudo systemctl enable opensnitchd
 
 ### UNINSTALL
@@ -114,8 +114,8 @@ sudo systemctl enable libvirtd
 # lsmod | grep kvm
 
 ## VIRTIO WIN DRIVERS
-sudo wget https://fedorapeople.org/groups/virt/virtio-win/virtio-win.repo \
-  -O /etc/yum.repos.d/virtio-win.repo
+### sudo wget https://fedorapeople.org/groups/virt/virtio-win/virtio-win.repo \
+### -O /etc/yum.repos.d/virtio-win.repo
 
 
 # sudo dnf -y install clamav
