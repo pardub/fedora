@@ -80,7 +80,7 @@ wget https://github.com/evilsocket/opensnitch/releases/download/v1.4.0/opensnitc
 sudo dnf -y localinstall opensnitch-1*.rpm; sudo dnf -y localinstall opensnitch-ui*.rpm
 cd
 sudo sytemctl start opensnitchd
-## sudo sytemctl enable opensnitchd
+## sudo systemctl enable opensnitchd
 
 ### UNINSTALL
 sudo dnf -y remove totem
