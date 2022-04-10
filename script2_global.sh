@@ -18,6 +18,9 @@ sudo systemctl disable sshd
 ###  ADD FLATPAK REPO
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
+### Manage Flatpak permissions
+sudo flatpak install flathub com.github.tchx84.Flatseal
+
 sudo mkdir -p git/git_clone
 
 ## INSTALL SOFTWARES
