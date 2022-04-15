@@ -76,6 +76,8 @@ sudo dnf -y install lynis ### audit
 sudo dnf -y install mpv ### For streaming with clone
 sudo dnf -y install dconf-editor  ### save workspaces after reboot
 sudo dnf -y install macchanger  ### change MAC addres
+sudo dnf copr enable daftaupe/etesync-rs   ## Etesync repo
+sudo dnf install evolution-etesync
 ### mkdir ~/git
 ### cd ~/git
 ### wget https://github.com/evilsocket/opensnitch/releases/download/v1.4.1/opensnitch-ui-1.4.1-1.noarch.f29.rpm
