@@ -126,7 +126,6 @@ sudo systemctl enable libvirtd
 # sudo dnf -y install clamav
 # sudo dnf -y clamav-unofficial-sigs
 sudo dnf -y install redshift # Redshift adjusts the color temperature of the screen
-### install opensnitch
 
 ### Download vim plugin
 cd
