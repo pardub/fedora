@@ -236,11 +236,19 @@ gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profi
 
 #### INSTALL JETBRAINS MONO FONTS IN ~/.local/share/fonts
 
-cd /tmp
-sudo wget https://download.jetbrains.com/fonts/JetBrainsMono-2.225.zip
+#cd /tmp
+#sudo wget https://download.jetbrains.com/fonts/JetBrainsMono-2.225.zip
 ##### sudo unzip /tmp/JetBrainsMono-2.225.zip -d ~/.local/share/fonts
-sudo unzip /tmp/JetBrainsMono-2.225.zip -d ~/.local/share/fonts/JetBrainsMono
+#sudo unzip /tmp/JetBrainsMono-2.225.zip -d ~/.local/share/fonts/JetBrainsMono
+#fc-cache -v
+
+mkdir -p ~/.local/share/fonts/nerd-fonts
+cd ~/.local/share/fonts
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip
+unzip JetBrainsMono.zip
+rm JetBrainsMono.zip
 fc-cache -v
+
 
 ### RECOMMENDED SETTINGS FOR THE FONT
 ### Size: 13
