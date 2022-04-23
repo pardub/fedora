@@ -239,6 +239,12 @@ logout
 ### git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 ### echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 
+### ZSH AUTOSUGGESTIONS CONFIG
+mkdir - p ~/.zsh/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+echo 'source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ' >> ~/.zshrc
+
+
 reboot
 
 
