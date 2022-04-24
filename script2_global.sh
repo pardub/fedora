@@ -290,5 +290,16 @@ cd ~/.zsh/.fzf
 source ~/.zshrc
 cd
 
+### ZSH AUTOSUGGESTIONS CONFIG
+mkdir - p ~/.zsh/zsh-autosuggestions
+cd ~/.zsh
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+echo 'source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ' >> ~/.zshrc
+
+### ZSH SYNTAX HIGHLIGHTING
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 
 
