@@ -71,7 +71,8 @@ sudo dnf -y install gtkhash
 sudo dnf -y install kleopatra
 sudo dnf -y install ffmpeg
 sudo dnf -y install gpgme
-sudo dnf -y install claws-mail 
+sudo dnf -y install claws-mail
+sudo dnf -y install colordiff
 sudo dnf -y install lynis ### audit
 sudo dnf -y install mpv ### For streaming with clone
 sudo dnf -y install dconf-editor  ### save workspaces after reboot
