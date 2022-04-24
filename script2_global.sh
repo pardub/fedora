@@ -283,3 +283,12 @@ echo '[keyfile]\nunmanaged-devices=type:wireguard' /etc/NetworkManager/conf.d/un
 ### Claws mail config timezone
 sed -i 's/hide_timezone=0/hide_timezone=1/' ~/.claws-mail/clawsrc
 
+### FZF FUZZY FINDER
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.zsh/fzf
+cd ~/.zsh/.fzf
+./install
+source ~/.zshrc
+cd
+
+
+
