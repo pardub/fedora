@@ -24,6 +24,12 @@ zmodload zsh/complist
 #compinit
 _comp_options+=(globdots)		# Include hidden files.
 
+# Git auto/tab complete only for Git
+cd ~/.zsh
+curl -o _git https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
+echo "zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.zsh" >> ~/.zshrc
+echo 'fpath=(~/.zsh $fpath)'  >> ~/.zshrc
+
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/marc/.zshrc'
