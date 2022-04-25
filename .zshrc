@@ -18,18 +18,17 @@ SAVEHIST=50000
 bindkey -v
 
 # Basic auto/tab complete:
-autoload -U compinit
+#autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
-compinit
+#compinit
 _comp_options+=(globdots)		# Include hidden files.
 
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/marc/.zshrc'
 
-autoload -Uz compinit
-compinit
+autoload -Uz compinit && compinit
 
 ### DOCKER AUTO-COMPLETION COMMANDS ACTIVATION
 # make sure the "_docker" file from  https://github.com/docker/cli/blob/master/contrib/completion/zsh/_docker  is installed under /usr/share/zsh/site-functions
