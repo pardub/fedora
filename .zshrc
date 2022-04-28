@@ -90,7 +90,7 @@ alias www="python -m SimpleHTTPServer 8000"
 alias speed="speedtest-cli --server XYZ --simple"
 
 #Need to know your local IP address?
-alias ipe="curl ipinfo.io/ip/"
+alias ip="curl ipinfo.io/ip/"
 
 #Show open ports
 alias ports="netstat -tulanp"
