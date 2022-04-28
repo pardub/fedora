@@ -10,7 +10,8 @@ sudo dnf -y update
 sudo dnf -y install zsh
 
 ## zsh default shell
-sudo chsh -s /bin/zsh marc
+# sudo chsh -s /bin/zsh marc ## replaced by the command below
+sudo chsh -s $(which zsh) $USER
 if [ -e /home/marc/.zshrc ]
 then rm /home/marc/.zshrc
 fi
