@@ -77,7 +77,9 @@ sudo dnf -y install mpv ### For streaming with clone
 sudo dnf -y install dconf-editor  ### save workspaces after reboot
 sudo dnf -y install macchanger  ### change MAC addres
 sudo dnf copr enable daftaupe/etesync-rs   ## Etesync repo
-sudo dnf install evolution-etesync
+sudo dnf -y install evolution-etesync
+sudo dnf -y install pass #password manager
+sudo dnf -y install qtpass # Gui for pass
 ### mkdir ~/git
 ### cd ~/git
 
