@@ -14,7 +14,6 @@ sudo dnf clean all
 sudo systemctl stop sshd
 sudo systemctl disable sshd
 
-### Add tool to change Mac Address before reboot
 ###  ADD FLATPAK REPO
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
