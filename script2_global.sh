@@ -1,18 +1,14 @@
 #!/bin/bash -xev
 
-### Vim Default editor
-export VISUAL=vim
-export EDITOR="$VISUAL"
-
 ### ADD EXTRA REPOS rpm fusion
 sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 ### Fastest mirror and Delta RPM
-echo 'fastestmirror=True'             | sudo tee -a /etc/dnf/dnf.conf
-echo 'deltarpm=True'                  | sudo tee -a /etc/dnf/dnf.conf
-echo 'max_parallel_downloads=10'      | sudo tee -a /etc/dnf/dnf.conf
-sudo dnf clean all
+sudo echo 'fastestmirror=True'             | sudo tee -a /etc/dnf/dnf.conf
+sudo echo 'deltarpm=True'                  | sudo tee -a /etc/dnf/dnf.conf
+sudo echo 'max_parallel_downloads=10'      | sudo tee -a /etc/dnf/dnf.conf
+sudo sudo dnf clean all
 
 ### DISABLING SSH
 sudo systemctl stop sshd
@@ -31,9 +27,11 @@ sudo dnf -y install cockpit
 
 ### Backup system
 sudo dnf -y install timeshift
+
+sudo dnf -y install git
 sudo dnf -y install vim
-# sudo dnf -y install visudo
-sudo dnf -y install --allowerasing vim-default-editor
+#sudo dnf -y install visudo
+#sudo dnf -y install --allowerasing vim-default-editor
 sudo dnf -y install gparted
 sudo dnf -y install util-linux-user
 sudo dnf -y install zsh
@@ -55,17 +53,16 @@ sudo dnf -y install bat
 sudo dnf -y install exa
 sudo dnf -y install fzf
 sudo dnf -y install youtube-dl
-sudo dnf -y install git
 
 ### Text Calendar
 sudo dnf -y install calcurse
 sudo dnf -y install rclone
 sudo dnf -y install rclone-browser
 sudo dnf -y install audacity-3.0.2
-sudo dnf -y install dropbox
+#sudo dnf -y install dropbox
 sudo dnf -y install chrome-remote-desktop
 sudo dnf -y install fuse
-sudo dnf -y install power-profiles-daemon
+#sudo dnf -y install power-profiles-daemon
 sudo dnf -y install pdfarranger
 sudo dnf -y install bookworm
 sudo dnf -y install anki
@@ -150,7 +147,9 @@ sudo systemctl enable libvirtd
 ### Antivirus
 # sudo dnf -y install clamav
 # sudo dnf -y clamav-unofficial-sigs
-sudo dnf -y install redshift # Redshift adjusts the color temperature of the screen
+
+# Redshift adjusts the color temperature of the screen
+sudo dnf -y install redshift
 
 ### Download vim plugin
 cd
@@ -192,35 +191,35 @@ sudo dnf -y check-update && sudo dnf -y  install code
 ### DOWNLOAD MESLO FONT
 
 ## TEST IF MESLO FONT IS ALREADY DOWNLOADED OR NOT
-sudo mkdir -p $HOME/.local/share/fonts/MesloGS
-cd $HOME/.local/share/fonts/MesloGS
+#sudo mkdir -p $HOME/.local/share/fonts/MesloGS
+#cd $HOME/.local/share/fonts/MesloGS
 
-if [ ! -e "$HOME/.local/share/fonts/MesloGS/MesloLGS NF Regular.ttf" ]
-then
-    cd  ~/.local/share/fonts/MesloGS | exit
-    sudo wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
-fi 
+#if [ ! -e "$HOME/.local/share/fonts/MesloGS/MesloLGS NF Regular.ttf" ]
+#then
+#    cd  ~/.local/share/fonts/MesloGS | exit
+#    sudo wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
+#fi 
 ###
-if [ ! -e "$HOME/.local/share/fonts/MesloGS/MesloLGS NF Bold.ttf" ]
-then
-    cd  ~/.local/share/fonts/MesloGS | exit
+#if [ ! -e "$HOME/.local/share/fonts/MesloGS/MesloLGS NF Bold.ttf" ]
+#then
+#    cd  ~/.local/share/fonts/MesloGS | exit
     sudo wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
-fi
+#fi
 ###
-if [ ! -e "$HOME/.local/share/fonts/MesloGS/MesloLGS NF Italic.ttf" ]
-then
-    cd  ~/.local/share/fonts/MesloGS | exit
-    sudo wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
-fi
+#if [ ! -e "$HOME/.local/share/fonts/MesloGS/MesloLGS NF Italic.ttf" ]
+#then
+#    cd  ~/.local/share/fonts/MesloGS | exit
+#    sudo wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
+#fi
 ####
-if [ ! -e "$HOME/.local/share/fonts/MesloGS/MesloLGS NF Bold Italic.ttf" ]
-then
-    cd  ~/.local/share/fonts/MesloGS | exit
-    sudo wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
-fi
+#if [ ! -e "$HOME/.local/share/fonts/MesloGS/MesloLGS NF Bold Italic.ttf" ]
+#then
+#    cd  ~/.local/share/fonts/MesloGS | exit
+#    sudo wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
+#fi
 ###
 
-fc-cache -v
+#fc-cache -v
 
 ##### SET UP GNOME TERMINAL
 # https://ncona.com/2019/11/configuring-gnome-terminal-programmatically/
@@ -304,8 +303,10 @@ echo '[keyfile]\nunmanaged-devices=type:wireguard' /etc/NetworkManager/conf.d/un
 # This allows the Wireguard connection to be up and running automatically after reboot when it has been set up with nmcli.
 
 ### Claws mail config timezone
-sed -i 's/hide_timezone=0/hide_timezone=1/' ~/.claws-mail/clawsrc
+#sed -i 's/hide_timezone=0/hide_timezone=1/' ~/.claws-mail/clawsrc
 
+
+#################################### ZSH CONFIG ################################
 ### FZF FUZZY FINDER
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.zsh/fzf
 cd ~/.zsh/.fzf
@@ -328,7 +329,4 @@ source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 cd ~/.zsh
 git clone https://github.com/olets/zsh-abbr
 echo 'source ~.zsh/zsh-abbr/zsh-abbr.zsh' >> ~/.zshrc'
-
-
-
 
