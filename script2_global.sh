@@ -18,13 +18,13 @@ sudo dnf clean all
 sudo systemctl stop sshd
 sudo systemctl disable sshd
 
-###  ADD FLATPAK REPO
+### ADD FLATPAK REPO
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 ### Manage Flatpak permissions
 sudo flatpak install flathub com.github.tchx84.Flatseal
 
-## INSTALL SOFTWARES
+############## INSTALL SOFTWARES ##############
 
 ### web console for Linux servers
 sudo dnf -y install cockpit
