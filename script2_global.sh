@@ -340,3 +340,4 @@ cd ~/.zsh
 git clone https://github.com/olets/zsh-abbr
 echo 'source ~.zsh/zsh-abbr/zsh-abbr.zsh' >> ~/.zshrc'
 
+#### Gnu Stow #####
