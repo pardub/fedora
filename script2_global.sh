@@ -1,5 +1,9 @@
 #!/bin/bash -xev
 
+### Vim Default editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 ### ADD EXTRA REPOS rpm fusion
 sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
@@ -78,7 +82,7 @@ sudo dnf -y install gpgme
 sudo dnf -y install evolution
 sudo dnf -y install lynis ### audit
 
-### For streaming with clone
+### Streaming with rclone
 sudo dnf -y install mpv 
 
 ### save workspaces after reboot
@@ -99,6 +103,7 @@ sudo dnf -y install qtpass
 
 mkdir ~/git
 cd ~/git
+
 ### OPENSNITCH
 wget https://github.com/evilsocket/opensnitch/releases/download/v1.5.0/opensnitch-1.5.0-1.x86_64.rpm
 wget https://github.com/evilsocket/opensnitch/releases/download/v1.5.0/opensnitch-ui-1.5.0-1.noarch.f29.rpm
