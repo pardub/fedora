@@ -21,7 +21,6 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 ### Manage Flatpak permissions
 sudo flatpak install flathub com.github.tchx84.Flatseal
 
-sudo mkdir -p git/git_clone
 
 ## INSTALL SOFTWARES
 sudo dnf -y install cockpit ### web console for Linux servers
@@ -80,9 +79,9 @@ sudo dnf copr enable daftaupe/etesync-rs   ## Etesync repo
 sudo dnf -y install evolution-etesync
 sudo dnf -y install pass #password manager
 sudo dnf -y install qtpass # Gui for pass
-### mkdir ~/git
-### cd ~/git
 
+mkdir ~/git
+cd ~/git
 ### OPENSNITCH
 wget https://github.com/evilsocket/opensnitch/releases/download/v1.5.0/opensnitch-1.5.0-1.x86_64.rpm
 wget https://github.com/evilsocket/opensnitch/releases/download/v1.5.0/opensnitch-ui-1.5.0-1.noarch.f29.rpm
@@ -126,7 +125,7 @@ sudo systemctl enable libvirtd
 ### sudo wget https://fedorapeople.org/groups/virt/virtio-win/virtio-win.repo \
 ### -O /etc/yum.repos.d/virtio-win.repo
 
-
+### Antivirus
 # sudo dnf -y install clamav
 # sudo dnf -y clamav-unofficial-sigs
 sudo dnf -y install redshift # Redshift adjusts the color temperature of the screen
@@ -150,19 +149,18 @@ sudo dnf -y install jami
 echo 'marc ALL=(ALL:ALL) ALL' | sudo EDITOR='tee -a' visudo
 echo 'Defaults:marc timestamp_timeout=60' | sudo EDITOR='tee -a' visudo
 
-
-### ADD GOOGLE DNS 
-echo 'nameserver=8.8.8.8' | sudo tee -a /etc/hosts
+### ADD https://dns.watch/
+echo 'nameserver='84.200.69.80' | sudo tee -a /etc/hosts
+echo 'nameserver='84.200.70.40' | sudo tee -a /etc/hosts
 
 ### CHANGE HOSTNAME
 sudo hostnamectl set-hostname fedora
 
 ### SETUP PERMISSIVE  SELINUX
-sudo sed -i 's/enforcing/permissive/' /etc/selinux/config
+#sudo sed -i 's/enforcing/permissive/' /etc/selinux/config
 
 ### set up minimize/maximize  window
 gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
-### activate shortcuts to minimize all windows
 
 ### Download Visual Studio Code
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
