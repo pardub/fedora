@@ -23,7 +23,11 @@ sudo flatpak install flathub com.github.tchx84.Flatseal
 
 
 ## INSTALL SOFTWARES
-sudo dnf -y install cockpit ### web console for Linux servers
+
+### web console for Linux servers
+sudo dnf -y install cockpit
+
+### Backup system
 sudo dnf -y install timeshift
 sudo dnf -y install vim
 # sudo dnf -y install visudo
@@ -43,7 +47,6 @@ sudo dnf -y install borgmatic
 sudo dnf -y install okular
 sudo dnf -y install tldr
 sudo dnf -y install weechat
-### sudo dnf -y install mumble VOIP SOFTWARE
 sudo dnf -y install filezilla
 sudo dnf -y install wireguard-tools
 sudo dnf -y install bat
@@ -51,6 +54,8 @@ sudo dnf -y install exa
 sudo dnf -y install fzf
 sudo dnf -y install youtube-dl
 sudo dnf -y install git
+
+### Text Calendar
 sudo dnf -y install calcurse
 sudo dnf -y install rclone
 sudo dnf -y install rclone-browser
@@ -58,27 +63,41 @@ sudo dnf -y install audacity-3.0.2
 sudo dnf -y install dropbox
 sudo dnf -y install chrome-remote-desktop
 sudo dnf -y install fuse
-sudo dnf -y install rclone
-sudo dnf -y install rclone-browser
 sudo dnf -y install power-profiles-daemon
 sudo dnf -y install pdfarranger
 sudo dnf -y install bookworm
 sudo dnf -y install anki
 sudo dnf -y install tor
 sudo dnf -y install torbrowser-launcher
+
+### Checksum verification tool
 sudo dnf -y install gtkhash
+
 sudo dnf -y install kleopatra
 sudo dnf -y install ffmpeg
 sudo dnf -y install gpgme
-sudo dnf -y install claws-mail
+# sudo dnf -y install claws-mail
+sudo dnf -y install evolution
 sudo dnf -y install lynis ### audit
-sudo dnf -y install mpv ### For streaming with clone
-sudo dnf -y install dconf-editor  ### save workspaces after reboot
-sudo dnf -y install macchanger  ### change MAC addres
+
+### For streaming with clone
+sudo dnf -y install mpv 
+
+### save workspaces after reboot
+sudo dnf -y install dconf-editor
+
+### change MAC addres
+sudo dnf -y install macchanger 
+
+### Etesync
 sudo dnf copr enable daftaupe/etesync-rs   ## Etesync repo
 sudo dnf -y install evolution-etesync
-sudo dnf -y install pass #password manager
-sudo dnf -y install qtpass # Gui for pass
+
+### Password Manager
+sudo dnf -y install pass
+
+## Gui for Pass
+sudo dnf -y install qtpass
 
 mkdir ~/git
 cd ~/git
