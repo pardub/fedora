@@ -155,8 +155,8 @@ gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profi
 # Polar
 # Bitwarden 
 
-#### Firewalld Setup ####
-
+#### Disable Firewalld ####
+#### Setup iptables   #####
 
 ################# DOCKER INSTALL ###################
 ## https://docs.docker.com/engine/install/fedora/#install-using-the-repository
@@ -215,8 +215,6 @@ sh get-docker.sh
 ### TWEAKING SYSTEM FONTS
 # Make Ubuntu 20.04 Look Like MacOS [You Won't Believe the End Result]
 
-### FIREWALL SET UP OPEN/CLOSED PORTS
-
 ### VS CODE INSTALL EXTENSIONS
 code --install-extension ginfuru.ginfuru-better-solarized-dark-theme
 code --install-extension ms-azuretools.vscode-docker	
@@ -258,5 +256,3 @@ source ~/.zshrc
 cd
 
 reboot
-
-
