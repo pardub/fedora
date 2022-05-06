@@ -256,10 +256,18 @@ gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profi
 # Polar
 # Bitwarden 
 
-#### Firewalld Setup ####
+#### Disable Firewalld and Setup iptables ####
+
+sudo systemctl stop firewalld
+sudo systemctl disable firewalld
+sudo systemctl mask firewalld
+sudo dnf -y install iptables-services
+sudo touch /etc/sysconfig/iptables
+sudo systemctl enable iptables
+sudo systemctl start iptables
+
 
 #### INSTALL JETBRAINS MONO FONTS IN ~/.local/share/fonts
-
 #cd /tmp
 #sudo wget https://download.jetbrains.com/fonts/JetBrainsMono-2.225.zip
 ##### sudo unzip /tmp/JetBrainsMono-2.225.zip -d ~/.local/share/fonts
