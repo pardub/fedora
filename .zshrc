@@ -36,7 +36,8 @@ echo 'fpath=(~/.zsh $fpath)'  >> ~/.zshrc
 
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/marc/.zshrc'
+#zstyle :compinstall filename '/home/marc/.zshrc'
+zstyle :compinstall filename "~/.zshrc"
 
 autoload -Uz compinit && compinit
 
@@ -121,8 +122,8 @@ alias h="history"
 alias j="jobs -l"
 
 
-######### FIREWALL
-## shortcut  for iptables and pass it via sudo#
+################### FIREWALL ###################
+## shortcut  for iptables and pass it via sudo #
 alias ipt="sudo /sbin/iptables"
  
 # display all rules #
