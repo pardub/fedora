@@ -1,1 +1,1 @@
-# fedora
+# Fedora scripts install and dotfiles.
