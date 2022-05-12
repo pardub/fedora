@@ -38,6 +38,7 @@ sudo dnf -y install gparted
 sudo dnf -y install util-linux-user
 sudo dnf -y install zsh
 sudo dnf -y install nnn # Terminal file manager
+sudo dnf -y install ranger # Terminal file manager
 sudo dnf -y install chromium-browser-privacy
 sudo dnf -y groupinstall "Development Tools"
 sudo dnf -y install gnome-tweaks
