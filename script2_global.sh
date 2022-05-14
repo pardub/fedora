@@ -31,7 +31,7 @@ sudo dnf -y install cockpit
 sudo dnf -y install timeshift
 
 sudo dnf -y install git
-sudo dnf -y install vim
+sudo dnf -y install neovim
 #sudo dnf -y install visudo
 #sudo dnf -y install --allowerasing vim-default-editor
 sudo dnf -y install gparted
