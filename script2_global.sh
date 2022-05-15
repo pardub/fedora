@@ -36,6 +36,9 @@ sudo dnf -y install git
 # Vim-fork
 sudo dnf -y install neovim
 
+# A simple, fast and user-friendly alternative to 'find'
+sudo dnf -y install fd-find
+
 #sudo dnf -y install visudo
 #sudo dnf -y install --allowerasing vim-default-editor
 
