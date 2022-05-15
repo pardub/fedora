@@ -1,5 +1,5 @@
 ### Vim Default editor
-export VISUAL=vim
+export VISUAL=nvim
 export EDITOR="$VISUAL"
 
 ### DOWNLOAD POWERLEVEL10K
