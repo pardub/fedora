@@ -53,13 +53,21 @@ sudo dnf -y install tldr
 sudo dnf -y install weechat
 sudo dnf -y install filezilla
 sudo dnf -y install wireguard-tools
+
+# A cat(1) clone with syntax highlighting and Git integration.
 sudo dnf -y install bat
+
+# A modern replacement for ls
 sudo dnf -y install exa
+
+# A command-line fuzzy finder
 sudo dnf -y install fzf
+
 sudo dnf -y install youtube-dl
 
 ### Text Calendar
 sudo dnf -y install calcurse
+
 sudo dnf -y install rclone
 sudo dnf -y install rclone-browser
 sudo dnf -y install audacity-3.0.2
@@ -81,18 +89,20 @@ sudo dnf -y install ffmpeg
 sudo dnf -y install gpgme
 # sudo dnf -y install claws-mail
 sudo dnf -y install evolution
-sudo dnf -y install lynis ### audit
 
-### Streaming with rclone
+# Lynis - Security auditing and hardening tool, for UNIX-based systems
+sudo dnf -y install lynis
+
+# Streaming with rclone
 sudo dnf -y install mpv 
 
-### save workspaces after reboot
+# save workspaces after reboot
 sudo dnf -y install dconf-editor
 
-### change MAC addres
+# change MAC addres
 sudo dnf -y install macchanger 
 
-### Etesync
+# Etesync
 sudo dnf copr enable daftaupe/etesync-rs   ## Etesync repo
 sudo dnf -y install evolution-etesync
 
