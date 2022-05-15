@@ -30,28 +30,58 @@ sudo dnf -y install cockpit
 ### Backup system
 sudo dnf -y install timeshift
 
+#  distributed version control system
 sudo dnf -y install git
+
+# Vim-fork
 sudo dnf -y install neovim
+
 #sudo dnf -y install visudo
 #sudo dnf -y install --allowerasing vim-default-editor
+
+# Gparted is the GNOME Partition Editor
 sudo dnf -y install gparted
+
+# Collection of Linux utilities
 sudo dnf -y install util-linux-user
+
+# Zsh
 sudo dnf -y install zsh
-sudo dnf -y install nnn # Terminal file manager
-sudo dnf -y install ranger # Terminal file manager
+
+# Terminal file manager
+sudo dnf -y install nnn 
+
+# Terminal file manager
+sudo dnf -y install ranger 
+
+# Browser
 sudo dnf -y install chromium-browser-privacy
+
 sudo dnf -y groupinstall "Development Tools"
 sudo dnf -y install gnome-tweaks
 sudo dnf -y install gnome-extensions-app
 sudo dnf -y install autoconf 
 sudo dnf -y install automake
 sudo dnf -y install ansible
+
+# Deduplicating backup program
 sudo dnf -y install borgbackup
+
+# Simple, configuration-driven backup software for servers and workstations.
 sudo dnf -y install borgmatic
+
+# Document viewer
 sudo dnf -y install okular
+
+# Collaborative cheatsheets for console commands
 sudo dnf -y install tldr
+
+# IRC client
 sudo dnf -y install weechat
+
+# FTP application
 sudo dnf -y install filezilla
+
 sudo dnf -y install wireguard-tools
 
 # A cat(1) clone with syntax highlighting and Git integration.
@@ -68,26 +98,45 @@ sudo dnf -y install youtube-dl
 ### Text Calendar
 sudo dnf -y install calcurse
 
+# rsync for cloud storage
 sudo dnf -y install rclone
+
+# Gui for rclone
 sudo dnf -y install rclone-browser
+
+# audio editor and recorder
 sudo dnf -y install audacity-3.0.2
+
 #sudo dnf -y install dropbox
 sudo dnf -y install chrome-remote-desktop
 sudo dnf -y install fuse
 #sudo dnf -y install power-profiles-daemon
 sudo dnf -y install pdfarranger
 sudo dnf -y install bookworm
+
+# flashcard program using spaced repetition
 sudo dnf -y install anki
+
+# Anonymizing overlay network for TCP
 sudo dnf -y install tor
+
+# Tor browser launcher
 sudo dnf -y install torbrowser-launcher
 
 ### Checksum verification tool
 sudo dnf -y install gtkhash
 
+# Certificate manager and GUI for OpenPGP 
 sudo dnf -y install kleopatra
+
+# Collection of libraries and tools to process multimedia content such as audio, video, subtitles and related metadata.
 sudo dnf -y install ffmpeg
+
+# GnuPG Made Easy
 sudo dnf -y install gpgme
 # sudo dnf -y install claws-mail
+
+# Mail Client Evolution
 sudo dnf -y install evolution
 
 # Lynis - Security auditing and hardening tool, for UNIX-based systems
@@ -102,8 +151,10 @@ sudo dnf -y install dconf-editor
 # change MAC addres
 sudo dnf -y install macchanger 
 
-# Etesync
-sudo dnf copr enable daftaupe/etesync-rs   ## Etesync repo
+# Etesync repo
+sudo dnf copr enable daftaupe/etesync-rs
+
+# Etesync add-on for Evolution
 sudo dnf -y install evolution-etesync
 
 ### Password Manager
