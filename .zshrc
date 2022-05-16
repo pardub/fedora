@@ -166,6 +166,11 @@ alias size="du -sh"
 alias ls="exa"
 alias ll="exa -1 -F -l -a --git -g -h"
 
+## Update
+alias up="sudo dnf up -y"
+alias install="sudo dnf install "
+
+
 #-------------------------------------------------------------
 # Git Alias Commands
 #-------------------------------------------------------------
