@@ -161,6 +161,7 @@ alias size="du -sh"
 
 ## Replace ls by exa
 alias ls="exa"
+alias ll="exa -1 -F -l -a --git -g -h"
 
 #-------------------------------------------------------------
 # Git Alias Commands
