@@ -159,6 +159,9 @@ alias gpumeminfo="grep -i --color memory /var/log/Xorg.0.log"
 ## Size folder
 alias size="du -sh"
 
+## Replace ls by exa
+alias ls="exa"
+
 #-------------------------------------------------------------
 # Git Alias Commands
 #-------------------------------------------------------------
