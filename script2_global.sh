@@ -251,6 +251,26 @@ sudo hostnamectl set-hostname fedora
 ### set up minimize/maximize  window
 gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
 
+
+#### INSTALL JETBRAINS MONO FONTS IN ~/.local/share/fonts
+#cd /tmp
+#sudo wget https://download.jetbrains.com/fonts/JetBrainsMono-2.225.zip
+##### sudo unzip /tmp/JetBrainsMono-2.225.zip -d ~/.local/share/fonts
+#sudo unzip /tmp/JetBrainsMono-2.225.zip -d ~/.local/share/fonts/JetBrainsMono
+#fc-cache -v
+
+mkdir -p ~/.local/share/fonts/nerd-fonts
+cd ~/.local/share/fonts
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip
+unzip JetBrainsMono.zip
+rm JetBrainsMono.zip
+fc-cache -v
+
+
+### RECOMMENDED SETTINGS FOR THE FONT
+### Size: 13
+### Line spacing: 1.2
+
 ### Download Visual Studio Code
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
@@ -335,24 +355,7 @@ sudo systemctl enable iptables
 sudo systemctl start iptables
 
 
-#### INSTALL JETBRAINS MONO FONTS IN ~/.local/share/fonts
-#cd /tmp
-#sudo wget https://download.jetbrains.com/fonts/JetBrainsMono-2.225.zip
-##### sudo unzip /tmp/JetBrainsMono-2.225.zip -d ~/.local/share/fonts
-#sudo unzip /tmp/JetBrainsMono-2.225.zip -d ~/.local/share/fonts/JetBrainsMono
-#fc-cache -v
 
-mkdir -p ~/.local/share/fonts/nerd-fonts
-cd ~/.local/share/fonts
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip
-unzip JetBrainsMono.zip
-rm JetBrainsMono.zip
-fc-cache -v
-
-
-### RECOMMENDED SETTINGS FOR THE FONT
-### Size: 13
-### Line spacing: 1.2
 
 
 #### SET UP VS CODE TO USE NEW FONTS
