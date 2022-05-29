@@ -118,7 +118,7 @@ then
     sudo wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
 fi
 
-fc-cache -v
+fc-cache -f -v
 
 ##### SET UP GNOME TERMINAL
 # https://ncona.com/2019/11/configuring-gnome-terminal-programmatically/
