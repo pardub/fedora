@@ -259,12 +259,12 @@ gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize
 #sudo unzip /tmp/JetBrainsMono-2.225.zip -d ~/.local/share/fonts/JetBrainsMono
 #fc-cache -v
 
-mkdir -p ~/.local/share/fonts/nerd-fonts
-cd ~/.local/share/fonts
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip
-unzip JetBrainsMono.zip
-rm JetBrainsMono.zip
-fc-cache -v
+sudo mkdir -p ~/.local/share/fonts/nerd-fonts
+sudo cd ~/.local/share/fonts
+sudo wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip
+sudo unzip JetBrainsMono.zip
+sudo rm JetBrainsMono.zip
+sudo fc-cache -v
 
 
 ### RECOMMENDED SETTINGS FOR THE FONT
