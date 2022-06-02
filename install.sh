@@ -181,7 +181,7 @@ sudo dnf -y config-manager --add-repo https://download.docker.com/linux/fedora/d
 
 ## INSTALL DOCKER ENGINE
 #sudo dnf -y install docker-ce docker-ce-cli containerd.io
-sudo dnf install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+sudo dnf -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 sudo systemctl start docker
 sudo systemctl enable docker
 
