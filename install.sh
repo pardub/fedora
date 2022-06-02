@@ -162,7 +162,7 @@ gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profi
 ## https://docs.docker.com/engine/install/fedora/#install-using-the-repository
 
 ## Uninstall old versions
-sudo dnf remove docker \
+sudo dnf -y remove docker \
                   docker-client \
                   docker-client-latest \
                   docker-common \
@@ -171,7 +171,7 @@ sudo dnf remove docker \
                   docker-logrotate \
                   docker-selinux \
                   docker-engine-selinux \
-                  docker-engine -y
+                  docker-engine
 
 
 ## SET UP THE REPOSITORY
@@ -180,7 +180,8 @@ sudo dnf -y install dnf-plugins-core -y
 sudo dnf -y config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
 
 ## INSTALL DOCKER ENGINE
-sudo dnf -y install docker-ce docker-ce-cli containerd.io
+#sudo dnf -y install docker-ce docker-ce-cli containerd.io
+sudo dnf install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 sudo systemctl start docker
 sudo systemctl enable docker
 
@@ -189,8 +190,8 @@ sudo groupadd docker
 sudo usermod -aG docker "$USER"
 
 ### Docker Compose
-sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
+#sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+#sudo chmod +x /usr/local/bin/docker-compose
 
 ### CHECK DOCKER COMPOSE VERSION
 docker-compose --version
